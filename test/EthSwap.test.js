@@ -55,7 +55,7 @@ contract('EthSwap',  ([deployer, investor]) => {
         let result;
 
         before(async () => {
-            // Purchase tokens before each example
+            // Purchase tokens before each example is done
             result = await ethSwap.buyTokens({ from: investor, value: web3.utils.toWei('1', 'ether')})
         })
 
