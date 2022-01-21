@@ -28,7 +28,7 @@ contract EthSwap {
         uint tokenAmount = msg.value * rate;
 
         // Check that ethswap has enough tokens for this trade (require will act as a break if false)
-        require(token.balanceOf(address(this)) >= tokenAmount);
+        require(token.balanceOf(address(this)) >= tokenAmount, "dex needs liquidy for trade");
 
         // msg is the person calling the function, so here they will receive the tokens
         token.transfer(msg.sender, tokenAmount);
