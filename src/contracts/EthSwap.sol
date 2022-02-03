@@ -6,7 +6,7 @@ import "./Token.sol";
 // Smart contract where we will build out the functionality to buy and sell tokens
 contract EthSwap {
     
-    string public name = "EthSwap Instant Exchange"; // name variable
+    string public name = "Eth-Swap Instant Exchange"; // name variable
     Token public token; // use our Token contract with 'token'
     uint public rate = 100; //uint cannot be negative or have decimels
 
